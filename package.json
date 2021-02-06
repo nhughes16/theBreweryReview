@@ -4,9 +4,16 @@
   "description": "The Brewery Review",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "imagemin": "imagemin img/* -o dist/img",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "author": "Nathan Hughes",
   "license": "ISC",
@@ -16,6 +23,12 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }

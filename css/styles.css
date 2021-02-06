@@ -66,3 +66,7 @@ p{
     display: inline-flexbox;
     position: absolute;
 }
+
+#headerLogo{
+    margin-top: -10.5rem;
+}

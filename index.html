@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Bootstrap CSS-->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-
-    <!--Style Sheets
-	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />-->
-    <link rel="stylesheet" href="css/styles.css">
 
     <title>The Brewery Review</title>
 </head>
@@ -22,11 +20,15 @@
     <header class="jumbotron jumbotron-fluid tbr-orange">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 p-0 tbr-orange position-relative">
+                <div class="col-md-7 p-0 tbr-orange">
                     <img src="img/flight2.jpeg" alt="Beer Flight" class="img-fluid">
-                    <img src="img/logoClight.png" alt="The Brewery Review Logo" class="position-absolute bottom-0 end-0">
+                    <div id="headerLogo" class="d-flex justify-content-end">
+                        <a href="#"><img src="img/logoClight.png" alt="The Brewery Review Logo" class="img-fluid"></a>
+                    </div>
                     <h2 class="text-white mt-3">Experience Life</h2>
-
+                </div>
+                <div class="col position-absolute">
+                    
                 </div>
                 <div class="col-md-5">
                     <div class="row">
@@ -99,7 +101,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a class="stretched-link" role="button" data-toggle="modal" data-target="#review1Modal"></a>
+                <a class="stretched-link" role="button" id="btnReview1"></a>
                 <div class="card">
                     <div class="card-header tbr-orange text-white">
                         <h4>Blind Owl Brewery</h4>
@@ -114,7 +116,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <a class="stretched-link" role="button" data-toggle="modal" data-target="#review2Modal"></a>
+                <a class="stretched-link" role="button" id="btnReview2"></a>
                 <div class="card">
                     <div class="card-header tbr-orange text-white">
                         <h4>Bier Brewery</h4>
@@ -129,17 +131,17 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <a class="stretched-link" role="button" data-toggle="modal" data-target="#review3Modal"></a>
+                <a class="stretched-link" role="button" id="#btnReview3"></a>
                 <div class="card">
                     <div class="card-header tbr-orange text-white">
                         <h4>Sun King Brewery</h4>
                     </div>
-                    <img src="img/flight2.jpg" alt="Sun King Brewery" class="card-img-top">
+                    <a href="#"><img src="img/flight2.jpg" alt="Sun King Brewery" class="card-img-top"></a>
                     <div class="card-body">
                         <blockquote>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sint corrupti consectetur eligendi, dolorem voluptates optio consequatur asperiores harum aliquid, voluptate assumenda temporibus ipsa saepe quibusdam modi iusto, dolore reiciendis.
                             <footer class="blockquote-footer"> Sun King Brewery by Bill Jones</footer>
-                        </blockquote>
+                        </blockquote> 
                     </div>
                 </div>
             </div>
@@ -244,10 +246,13 @@
         </div>
     </div>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
