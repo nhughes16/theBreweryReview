@@ -10,6 +10,7 @@
     "imagemin": "imagemin img/* -o dist/img",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
