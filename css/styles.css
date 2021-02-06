@@ -1,72 +1,70 @@
-body{
-    background-color: #ffffff;
-}
+body {
+  background-color: #ffffff; }
 
-header{
-    background-color: #ff581a;
-}
+header {
+  background-color: #ff581a; }
 
-header h1, header h2, header h3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: .5rem;
-}
+header h1, header h2, header h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: .5rem; }
 
-h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: 75px;
-    letter-spacing: .25rem;
-}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+  letter-spacing: .25rem; }
 
-h2, h3, h4, h5{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: .07rem;
-}
+h2, h3, h4, h5 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: .07rem; }
 
-nav a{
-    color: #ffffff;
-    font-family: 'open sans';
-    font-size: 20px;
-}
-p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+nav a {
+  color: #ffffff;
+  font-family: 'open sans';
+  font-size: 20px; }
 
-.tbr-orange{
-    color:#ff581a;
-    background-color: #ff581a;
-}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
-.tbr-gray{
-    color: #545454;
-    background-color: #545454;
-}
+.tbr-orange {
+  color: #ff581a;
+  background-color: #ff581a; }
 
-.jumbotron{
-    padding: 0;
-}
+.tbr-gray {
+  color: #545454;
+  background-color: #545454; }
 
-#intro{
-    font-size: 1.5rem;
-}
+.jumbotron {
+  padding: 0; }
 
-#intro::first-letter{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color:#545454;
-}
+.top h1 {
+  z-index: 999;
+  position: inherit; }
 
-#intro::first-line{
-    font-size: 1.75rem;
-    font-family: 'Raleway', sans-serif;
-}
+.vertical-left {
+  transform: rotate(270deg);
+  transform-origin: top right;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
-#breweries{
-    color:#545454;
-    font-size: 100px;
-    display: inline-flexbox;
-    position: absolute;
-}
+#intro {
+  font-size: 1.5rem; }
 
-#headerLogo{
-    margin-top: -10.5rem;
-}
+#intro::first-letter {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #545454; }
+
+#intro::first-line {
+  font-size: 1.75rem;
+  font-family: 'Raleway', sans-serif; }
+
+#breweries {
+  color: #545454;
+  font-size: 150px;
+  margin-top: -4.75rem;
+  margin-left: -4.7rem;
+  z-index: 100; }
+
+#headerLogo {
+  margin-top: -10.5rem; }

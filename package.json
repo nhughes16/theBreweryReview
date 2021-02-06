@@ -11,7 +11,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
@@ -27,6 +27,7 @@
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
     "lite-server": "^2.5.4",
+    "node-sass": "^5.0.0",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
     "rimraf": "^3.0.2",
